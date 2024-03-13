@@ -21,7 +21,7 @@
             },
             {
                 icon: <Workflow size={60} color='#01B2FB' />,
-                title: "Marketing Campaign",
+                title: "Distrubtion of Labratory Equipments",
                 // descriptions: [
                 //     "Partnership Strategy",
                 //     "Partnership Managment",
@@ -36,7 +36,7 @@
             },
             {
                 icon: <FaArrowsDownToPeople color='#01B2FB' />,
-                title: "Partnership Managment",
+                title: "Agriculture Import and Distrubiton",
                 // descriptions: [
                 //     "Discord Creation",
                 //     "Twitter Managment",
