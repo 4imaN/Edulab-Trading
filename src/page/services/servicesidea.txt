@@ -1,0 +1,53 @@
+<div className='flex flex-col lg:grid lg:grid-cols-6 items-center gap-5  w-full px-10'>
+    {/* md:gap-14  justify-evenly  md:px-20*/}
+    {strategy.map((item, index) => (
+        <motion.div
+            variants={cardVariants}
+            initial='initial'
+            whileInView='animate'
+            custom={index}
+            className='w-full flex flex-col rounded-lg  py-10 roundedd-md items-center gap-3 hover:cursor-pointer'
+            onMouseOver={() => setDisplayService(index)}
+        >
+            {/* px-5  border-2 border-white */}
+            <div
+                className={`text-5xl text-[#01B2FB] ease-in-out duration-500 ${
+                    displayService === index ? "scale-150" : ""
+                }`}
+            >
+                {item.icon}
+            </div>
+            {/* <p className='text-center w-full text-[#01B2FB] font-bold text-2xl'>
+                                {item.title}
+                            </p> */}
+            <p
+                className={`text-center min-w-fit w-full text-[#01B2FB] font-bold text-md ease-in-out duration-500 ${
+                    displayService === index ? "scale-150" : ""
+                }`}
+            >
+                {item.title}
+            </p>
+            {/* <div className='text-lg space-y-3 text-center w-full'>
+                                {item.descriptions.map((detail) => (
+                                    <p className='w-full'>{detail}</p>
+                                ))}
+                            </div> */}
+        </motion.div>
+    ))}
+</div>;
+{
+    <div
+        className={`flex items-center w-full h-full ${
+            displayService % 2 === 0 ? "flex-row" : "flex-row-reverse"
+        }`}
+    >
+        <div className='text-7xl w-full flex justify-center'>
+            <img src={bg} className='h-[300px] w-[300px]' />
+        </div>
+        <div className='text-xl space-y-3 text-center w-full'>
+            {strategy[displayService].descriptions.map((detail) => (
+                <p className='w-full text-xl font-semibold  '>{detail}</p>
+            ))}
+        </div>
+    </div>;
+}
