@@ -4,7 +4,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import { useState } from "react";
 
 const Nav = () => {
-    const [chatArrow, setChatArrow] = useState(false);
+    
     return (
         <div className='flex justify-center items-center text-white px-5 md:px-14 lg:px-20 '>
             <div className='max-w-[1400px] w-full flex items-center justify-between'>
