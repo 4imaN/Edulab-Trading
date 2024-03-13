@@ -1,10 +1,8 @@
 import Nav from "../components/Nav.tsx";
 import useInitialLoad from "../hooks/useInitialLoad";
-import Clients from "./clients/Clients";
 import Hero from "./Hero/Hero.tsx";
 import Home from "./Home/Home.tsx";
 import Services from "./services/Services.tsx";
-import Team from "./team/Team.tsx";
 import Contacts from "./contacts/Contacts.tsx";
 
 const View = () => {
@@ -12,7 +10,7 @@ const View = () => {
     return (
         <div>
             {initialLoad ? (
-                <Hero />
+                <Hero />    
             ) : (
                 <div>
                     <Nav />

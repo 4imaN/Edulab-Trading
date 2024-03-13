@@ -36,7 +36,7 @@ const Contacts = () => {
   };
 
   return (
-    <div className="py-5 md:py-24 flex flex-col items-center text-white px-5 md:px-14 lg:px-20">
+    <div className="py-5 md:py-24 flex flex-col items-center text-white px-5 md:px-14 lg:px-20" id='Contacts'>
       <div className="text-5xl text-center font-bold mb-20">Contacts</div>
       <div className="w-full h-full max-w-[1400px] flex flex-col justify-center">
         <div className="flex flex-col-reverse md:grid md:grid-cols-2 items-center md:items-start text-center md:text-left gap-5 overflow-hidden">

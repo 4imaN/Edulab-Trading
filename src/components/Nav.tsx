@@ -14,16 +14,14 @@ const Nav = () => {
                 </div>
 
                 <div className='hidden md:flex gap-5 items-center text-white text-2xl font-semibold '>
-                    <Link to='#clients' smooth className="hover:scale-105 hover:text-blue-500">
-                        Clients
-                    </Link>
+                    
                     <Link to='#services' smooth className="hover:scale-105 hover:text-blue-500">
                         Services
                     </Link>
-                    <Link to='#team' smooth className="hover:scale-105 hover:text-blue-500">
-                        About Us
+                    <Link to='#clients' smooth className="hover:scale-105 hover:text-blue-500">
+                        Our products
                     </Link>
-                    <Link to='#contacts' smooth className="hover:scale-105 hover:text-blue-500">
+                    <Link to='#Contacts' smooth className="hover:scale-105 hover:text-blue-500">
                         Contacts
                     </Link>
                 </div>
