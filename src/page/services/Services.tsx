@@ -1,4 +1,4 @@
-    import { Brain, Workflow } from "lucide-react";
+    import { Workflow } from "lucide-react";
     import { FaArrowsDownToPeople } from "react-icons/fa6";
     import { FaFileImport } from "react-icons/fa";
     import { motion } from "framer-motion";
