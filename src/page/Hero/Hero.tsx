@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import potion from "../../assets/manaFlask.png";
+import potion from "../../assets/manaFlask2.png";
 import bg from "../../assets/appBg.png";
 const Hero = () => {
     const initial = {

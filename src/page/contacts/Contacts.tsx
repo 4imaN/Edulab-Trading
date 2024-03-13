@@ -16,7 +16,7 @@ const Contacts = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("/api/send-email", {
+    fetch("/api/send-email", { // Replace with your actual API endpoint URL
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -26,10 +26,8 @@ const Contacts = () => {
       .then((response) => {
         if (response.ok) {
           console.log("Email sent successfully!");
-
         } else {
           console.log("Failed to send email.");
-          
         }
       })
       .catch((error) => {
@@ -92,9 +90,7 @@ const Contacts = () => {
           </div>
           <div className="flex flex-col justify-evenly items-center md:items-start gap-y-4 ml-20">
             <div className="bg-gray-800 rounded-lg p-9">
-              
-                <img  className="w-[200px] mb-6" src={logo} alt="Logo" />
-              
+              <img className="w-[200px] mb-6" src={logo} alt="Logo" />
               <h2 className="text-2xl font-bold">Contact Information</h2>
               <p className="text-gray-300 mt-4">Location: Your Location</p>
               <p className="text-gray-300">Phone: Your Phone Number</p>
